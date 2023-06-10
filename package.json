@@ -5,7 +5,6 @@
   "main": "apiRouter.js",
   "scripts": {
     "start": "node db.js",
-    "watch": "nodemon db",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
