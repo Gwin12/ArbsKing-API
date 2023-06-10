@@ -2,9 +2,9 @@
   "name": "sport-arbitrage-backend-apis",
   "version": "1.0.0",
   "description": "",
-  "main": "apiRouter.js",
+  "main": "db.js",
   "scripts": {
-    "start": "db.js",
+    "start": "node db.js",
     "watch": "nodemon db",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
