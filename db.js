@@ -9,7 +9,7 @@ const client =  new MongoClient(process.env.CONNECTIONSTRING, { useUnifiedTopolo
 async function start() {
     try {
         await client.connect()
-        console.log("connected!!!!")
+        console.log("connected")
         module.exports = client
         const app = require('./app')
         app.listen(process.env.PORT)
