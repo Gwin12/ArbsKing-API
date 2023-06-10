@@ -1,6 +1,7 @@
 const dotenv = require('dotenv')
 dotenv.config()
 const {MongoClient} = require('mongodb')
+const PORT = process.env.PORT || 3000
 
 
 
@@ -9,10 +10,11 @@ const client =  new MongoClient(process.env.CONNECTIONSTRING, { useUnifiedTopolo
 async function start() {
     try {
         await client.connect()
-        console.log("connected")
+        console.log("Connected")
         module.exports = client
         const app = require('./app')
-        app.listen(process.env.PORT)
+        app.listen(PORT)
+
     } catch (error) {
         console.error(error)
     }
