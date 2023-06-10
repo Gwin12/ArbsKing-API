@@ -4,7 +4,7 @@ const {MongoClient} = require('mongodb')
 
 
 
-const client =  new MongoClient(process.env.CONNECTIONSTRING)
+const client =  new MongoClient(process.env.CONNECTIONSTRING, { useUnifiedTopology: true })
 
 async function start() {
     try {
@@ -19,4 +19,3 @@ async function start() {
     
 }
 start()
-
