@@ -2,7 +2,7 @@
   "name": "sport-arbitrage-backend-apis",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "l.js",
   "scripts": {
     "start": "node db.js",
     "watch": "nodemon db",
