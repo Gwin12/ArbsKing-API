@@ -29,6 +29,7 @@
     "nodemailer": "^6.9.2",
     "nodemon": "^2.0.21",
     "playwright": "^1.33.0",
+    "@playwright/test": "^1.35.0",
     "superagent": "^8.0.9",
     "uuid": "^9.0.0",
     "validator": "^13.9.0",
